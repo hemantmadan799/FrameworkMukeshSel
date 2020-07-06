@@ -9,6 +9,8 @@ import com.aventstack.extentreports.model.Log;
 
 public class LoginPage {
 	WebDriver driver;
+	
+	//this is new commit from Hemant
 	public LoginPage(WebDriver driver)
 	{
 		this.driver=driver;
