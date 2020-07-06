@@ -16,16 +16,12 @@ public class LoginPage {
 		this.driver=driver;
 //		PageFactory.initElements(driver, LoginPage.class);
 	}
-	
 	@FindBy(xpath="//span[text()='Log In']") WebElement btnLogin;
 	@FindBy(xpath="//input[@name='email']") WebElement uName;
 	@FindBy(xpath="//input[@name='password']") WebElement pword;
 	@FindBy(xpath="//div[text()='Login']") WebElement loginButton;
-	
 	public void loginToCRM(String uname, String pass) 
 	{
-		
-		
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -43,5 +39,4 @@ public class LoginPage {
 			e.printStackTrace();
 		}
 	}
-	
 }
